@@ -35,6 +35,8 @@ namespace VerzioKezelesHF
                 atlag += item;
             }
             Console.WriteLine("A számok átlaga : {0}",(atlag/N));
+            Console.WriteLine("A számok közül a legkissebb: {0}",szamok.Min());
+            Console.WriteLine("A számok közül a legnagyobb: {0}", szamok.Max());
 
             Console.ReadKey();
         }
