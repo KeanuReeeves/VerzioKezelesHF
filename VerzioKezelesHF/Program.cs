@@ -16,6 +16,7 @@ namespace VerzioKezelesHF
             string[] st;
             Console.WriteLine("Adjon meg {0} számot (szóközzel elválasztva): ",N);
             string szam = Console.ReadLine();
+            int atlag = 0;
             for (int i = 0; i < N; i++)
             {
                 st = szam.Split(' ');
@@ -29,6 +30,11 @@ namespace VerzioKezelesHF
             {
                 Console.WriteLine(item);
             }
+            foreach (var item in szamok)
+            {
+                atlag += item;
+            }
+            Console.WriteLine("A számok átlaga : {0}",(atlag/N));
 
             Console.ReadKey();
         }
