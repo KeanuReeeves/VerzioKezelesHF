@@ -10,10 +10,11 @@ namespace VerzioKezelesHF
     {
         static void Main(string[] args)
         {
-            int N = 10;
+            Console.WriteLine("Adja meg hogy mennyi számot szeretne felvenni: ");
+            int N = Convert.ToInt32(Console.ReadLine());
             List<int> szamok = new List<int>();
             string[] st;
-            Console.WriteLine("Adjon meg 10 számot (szóközzel elválasztva): ");
+            Console.WriteLine("Adjon meg {0} számot (szóközzel elválasztva): ",N);
             string szam = Console.ReadLine();
             for (int i = 0; i < N; i++)
             {
